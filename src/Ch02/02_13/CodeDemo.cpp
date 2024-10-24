@@ -9,6 +9,13 @@ int main(){
     float result; 
 
     // Write your code here
+    int len = *(&nums + 1) - nums;
+    int sum = 0;
+    for (int i: nums) {
+        sum += i;
+    }
+
+    result = sum / len;
     
     std::cout << "The average is " << result << std::endl;
     
