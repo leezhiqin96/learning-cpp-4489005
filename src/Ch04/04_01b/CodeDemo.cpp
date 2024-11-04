@@ -29,7 +29,7 @@ int main(){
         std::cout << "a is even" << std::endl;
 
     std::cout << "The letter " << ltr << " is ";
-    bool is_vowel = linearSearch(vowels, sizeof(vowels), ltr);
+    bool is_vowel = linearSearch(vowels, sizeof(vowels) / sizeof(vowels[0]), ltr);
     if (is_vowel)
         std::cout << "a vowel" << std::endl;
     else
